@@ -18,21 +18,171 @@
             <div>
                 <a href="#" class="nav__logo">Amjad</a>
             </div>
-            <div class="nav__menu" id="nav.menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav__toggle" id="nav__toggle">
+            <div class="nav__toggle" id="nav-toggle">
                 <i class="bx bx-menu"></i>
             </div>
 
         </nav>
     </header>
+
+    <main class="l-main">
+        <!-- home -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi, <br>I'am <span class="home__title-color">Amjad</span><br>Web Developer</h1>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="home__social-icon"><i class='bx bxl-trello'></i></a>
+                <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <img src="imgs/profile1.jpeg" alt="not-found">
+            </div>
+
+        </section>
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="imgs/profile.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'am Amjad</h2>
+                    <p class="about__text">I am a web developer. I am outgoing, dedicated, and open-minded. I get across
+                        to people and adjust
+                        to changes with ease. I believe that a person should work on developing their professional
+                        skills and learning new things all the time</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo
+                            asperiores numquam rerum sunt repellendus qui repudiandae natus. Voluptate blanditiis
+                            nesciunt
+                            repellat similique sit numquam vitae ipsam nam reiciendis unde.</p>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">60%</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">50%</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">40%</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">40%</span>
+                        </div>
+                        <div class="skills__bar skills__py"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="imgs/skills1.jpg" alt="not-found" class="skills__img">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="imgs/work2.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="imgs/work1.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="imgs/work3.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="imgs/work4.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="imgs/work5.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="imgs/work6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <input type="button" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__title">Amjad</p>
+
+        <dev class="footer__social">
+            <a href="" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </dev>
+        <p class="footer__copyright">&#169; 2021 copyright all right reserved</p>
+    </footer>
 </body>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>
