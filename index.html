@@ -20,11 +20,11 @@
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -39,7 +39,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi, <br>I'am <span class="home__title-color">Amjad</span><br>Web Developer</h1>
-                <a href="" class="button">Contact</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -75,54 +75,57 @@
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo
-                        asperiores numquam rerum sunt repellendus qui repudiandae natus. Voluptate blanditiis nesciunt
-                        repellat similique sit numquam vitae ipsam nam reiciendis unde.</p>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__name">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
                     <div>
-                        <span class="skills__persentage">60%</span>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo
+                            asperiores numquam rerum sunt repellendus qui repudiandae natus. Voluptate blanditiis
+                            nesciunt
+                            repellat similique sit numquam vitae ipsam nam reiciendis unde.</p>
                     </div>
-                    <div class="skills__bar skills__html"></div>
-                </div>
 
-                <div class="skills__data">
-                    <div class="skills__name">
-                        <i class='bx bxl-css3 skills__icon'></i>
-                        <span class="skills__name">CSS3</span>
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">60%</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
                     </div>
-                    <div>
-                        <span class="skills__persentage">50%</span>
-                    </div>
-                    <div class="skills__bar skills__css"></div>
-                </div>
 
-                <div class="skills__data">
-                    <div class="skills__name">
-                        <i class='bx bxl-javascript skills__icon'></i>
-                        <span class="skills__name">JavaScript</span>
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">50%</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
                     </div>
-                    <div>
-                        <span class="skills__persentage">40%</span>
-                    </div>
-                    <div class="skills__bar skills__js"></div>
-                </div>
 
-                <div class="skills__data">
-                    <div class="skills__name">
-                        <i class='bx bxl-python skills__icon'></i>
-                        <span class="skills__name">Python</span>
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">40%</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
                     </div>
-                    <div>
-                        <span class="skills__persentage">40%</span>
+
+                    <div class="skills__data">
+                        <div class="skills__name">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div>
+                            <span class="skills__persentage">40%</span>
+                        </div>
+                        <div class="skills__bar skills__py"></div>
                     </div>
-                    <div class="skills__bar skills__py"></div>
                 </div>
                 <div>
                     <img src="imgs/skills1.jpg" alt="not-found" class="skills__img">
@@ -134,7 +137,7 @@
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
 
-            <div class="container bd-grid">
+            <div class="work__container bd-grid">
                 <div class="work__img">
                     <img src="imgs/work2.jpg" alt="">
                 </div>
@@ -170,6 +173,16 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <p class="footer__title">Amjad</p>
+
+        <dev class="footer__social">
+            <a href="" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </dev>
+        <p class="footer__copyright">&#169; 2021 copyright all right reserved</p>
+    </footer>
 </body>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="main.js"></script>
