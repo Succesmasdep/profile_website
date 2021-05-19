@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body id='body'> 
     <!-- header -->
 
     <header class="l-header">
@@ -25,6 +28,7 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><label id="theme-switcher"></label></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -39,7 +43,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi, <br>I'am <span class="home__title-color">Amjad</span><br>Web Developer</h1>
-                <a href="#contact" class="button">Contact</a>
+                <a href="#contact" class="button">Let's talk</a>
             </div>
 
             <div class="home__social">
@@ -188,3 +192,4 @@
 <script src="main.js"></script>
 
 </html>
+

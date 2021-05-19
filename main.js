@@ -59,3 +59,23 @@ sr.reveal('.work__img', { delay: 200 })
 
 // scroll contact
 sr.reveal('.contact__input', { delay: 200 })
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.setAttribute("data-theme", "light");
+    const themeSwitcher = document.getElementById("theme-switcher");
+
+    themeSwitcher.onclick = () => {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        const isLightMode = currentTheme === "light"
+        // console.log(isLightMode);
+        if (isLightMode) {
+            themeSwitcher.classList.add('active');
+        } else {
+            themeSwitcher.classList.remove('active');
+        }
+
+        const switchToTheme = isLightMode ? "dark" : "light"
+        document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+});

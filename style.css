@@ -1,6 +1,3 @@
-/* Google font */
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 /* variables in css */
 
 :root {
@@ -15,10 +12,13 @@
     --second-color: #0e2431;
 }
 
-/* fonts */
+[data-theme="dark"] {
+    --color-header-text: #161b22;
+    --body-color1: #0d1117;
+}
 
 :root {
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto Mono', monospace;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -67,6 +67,11 @@ body {
     font-family: Var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
+}
+
+[data-theme="dark"] body {
+    background:var(--body-color1);
+    color: rgb(221, 211, 211);
 }
 
 h1, h2, p {
@@ -139,6 +144,11 @@ img {
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
+[data-theme="dark"] .l-header {
+    background: #161b22;
+    color: azure;
+}
+
 /* nav */
 
 .nav {
@@ -147,6 +157,34 @@ img {
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
+}
+
+#theme-switcher {
+    position: absolute;
+    width: 49px;
+    height: 24px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+#theme-switcher::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    transition: 0.4s;
+}
+
+#theme-switcher.active:before {
+    left: 24px;
+    background: rgb(255, 251, 251);
 }
 
 @media screen and (max-width:768px) {
@@ -171,6 +209,10 @@ img {
     color: #fff;
 }
 
+[data-theme="dark"] .nav__link {
+    color: beige;
+}
+
 .nav__link:hover {
     position: relative;
 }
@@ -189,10 +231,24 @@ img {
     color: var(--second-color);
 }
 
+[data-theme="dark"] .nav__logo {
+    color: var(--first-color);
+}
+
 .nav__toggle {
     color: var(--second-color);
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.nav__theme {
+    color: #fff;
+    height: 26px;
+    width: 61px;
+    border-radius: 15px;
+    background-color: var(--second-color);
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Active menu */
@@ -423,6 +479,9 @@ img {
     font-weight: var(--font-semi);
     padding: 2rem 0;
 }
+[data-theme="dark"] .footer{
+    background-color: var(--color-header-text);
+}
 
 .footer__title {
     font-size: 1.5rem;
@@ -527,5 +586,8 @@ img {
     }
     .home__img {
         right: 10%;
+    }
+    #theme-switcher {
+        right: 10px;
     }
 }
