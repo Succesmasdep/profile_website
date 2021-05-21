@@ -70,7 +70,7 @@ body {
 }
 
 [data-theme="dark"] body {
-    background:var(--body-color1);
+    background: var(--body-color1);
     color: rgb(221, 211, 211);
 }
 
@@ -479,7 +479,8 @@ img {
     font-weight: var(--font-semi);
     padding: 2rem 0;
 }
-[data-theme="dark"] .footer{
+
+[data-theme="dark"] .footer {
     background-color: var(--color-header-text);
 }
 
@@ -521,6 +522,7 @@ img {
     .nav__list {
         display: flex;
         padding-top: 0;
+        margin-right: 62px;
     }
     .nav__item {
         margin-left: var(--mb-6);
